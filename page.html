@@ -8,6 +8,7 @@
   <p><em>첫번째</em> <strong>웹 페이지</strong>  </p>
   <p><strong><em>다른 문단</em></strong>을 추가해봅시다. </p>
 
+  <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
   <script>
 	var 메시지 = "안녕하세요";
 
@@ -49,6 +50,9 @@
 	console.log(headingElement.innerHTML);
 	var newHeadingText = prompt("새로운 제목을 입력해주세요.");
 	headingElement.innerHTML = newHeadingText;
+	
+	newHeadingText = prompt("새로운 제목을 입력해주세요.");
+	$("#main-heading").text(newHeadingText);
   
   </script>
   
