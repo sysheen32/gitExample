@@ -54,6 +54,14 @@
 	newHeadingText = prompt("새로운 제목을 입력해주세요.");
 	$("#main-heading").text(newHeadingText);
   
+	for (var i=0; i<3; i++) {
+		var hobby = prompt("취미를 입력해주세요!");
+		$("body").append("<p>" + hobby + "</p>");
+	}
+	
+	$("h1").text("페이드아웃과 함께 사라질 거예요.").fadeOut(3000).fadeIn(2000);
+	$("h1").slideUp(1000).slideDown(1000);
+  
   </script>
   
   
