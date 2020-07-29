@@ -7,6 +7,47 @@
   <h1>안녕하세요!</h1>
   <p><em>첫번째</em> <strong>웹 페이지</strong>  </p>
   <p><strong><em>다른 문단</em></strong>을 추가해봅시다. </p>
+
+  <script>
+	var 메시지 = "안녕하세요";
+
+
+	var 처음만든함수 = function() {
+	console.log("안녕하세요")
+	};
+
+	var 반환값 = 처음만든함수();
+	console.log(반환값);
+
+	var 반복횟수 = 100;
+	var 고양이그리기 = function(반복횟수) {
+		for(var i=0; i<반복횟수; i++) {
+			console.log( i + " =^.^=");
+		}
+	};
+	
+	고양이그리기(반복횟수);
+	
+	var 두배 = function(숫자) {
+		return 숫자 * 2;
+	};
+  
+	console.log(두배(2));
+  
+	var 세번째글자 = function(이름) {
+		if(이름.length < 3) {
+			return;
+		}
+		
+		return "이름의 세 번째 글자는 '" + 이름[2] + "'입니다";
+		
+	};
+	
+	console.log(세번째글자("곰"));
+	console.log(세번째글자("산타클로스"));
+  
+  </script>
+
 </body>
 
 </html>
