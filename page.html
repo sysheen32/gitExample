@@ -4,13 +4,12 @@
     <title>처음 만든 완전한 HTML 페이지</title>
 </head>
 <body>
-  <h1>안녕하세요!</h1>
+  <h1 id="main-heading">안녕하세요!</h1>
   <p><em>첫번째</em> <strong>웹 페이지</strong>  </p>
   <p><strong><em>다른 문단</em></strong>을 추가해봅시다. </p>
 
   <script>
 	var 메시지 = "안녕하세요";
-
 
 	var 처음만든함수 = function() {
 	console.log("안녕하세요")
@@ -45,8 +44,15 @@
 	
 	console.log(세번째글자("곰"));
 	console.log(세번째글자("산타클로스"));
+
+	var headingElement = document.getElementById("main-heading");
+	console.log(headingElement.innerHTML);
+	var newHeadingText = prompt("새로운 제목을 입력해주세요.");
+	headingElement.innerHTML = newHeadingText;
   
   </script>
+  
+  
 
 </body>
 
